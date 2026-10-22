@@ -1,0 +1,14 @@
+{
+  "name": "hitlines",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daglig musikutmaning – placera låtarna i rätt kronologisk ordning.",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
