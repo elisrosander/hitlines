@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Klassbaserat mörkt läge: dark: gäller när <html> har klassen "dark" */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Tailwind v4 ger knappar standardmarkör; återställ pekare på klickbara knappar */
+@layer base {
+  button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+}
